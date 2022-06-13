@@ -283,12 +283,12 @@ header {
   cursor: pointer;
 }
 
-.modal-btn:hover > .close-btn,
-.modal-btn:focus > .close-btn {
+.modal-btn:hover > .modal-btn__close,
+.modal-btn:focus > .modal-btn__close {
   fill: #2196f3;
 }
 
-.close-btn {
+.modal-btn__close {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -441,7 +441,7 @@ header {
 
 /*Преимущества*/
 
-.benefits-section {
+.benefits {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -476,15 +476,7 @@ header {
 .benefits__icon {
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--text-cl);
-}
+
 
 .benefits__subtitle {
   margin-bottom: 10px;
@@ -505,11 +497,11 @@ header {
 
 /*Деятельность*/
 
-.work-section {
+.work {
   padding-bottom: 94px;
 }
 
-.work-section__title {
+.work__title {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -556,17 +548,27 @@ header {
 
 /*Команда*/
 
-.personal-section {
+.personal {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-.personal-list {
+.personal__list {
   display: flex;
 }
 
-.personal-item {
+.personal__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--text-cl);
+  }
+
+.personal__item {
   margin-right: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -574,16 +576,16 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.personal-item:last-child {
+.personal__item:last-child {
   margin-right: 0;
 }
 
-.avatar-name {
+.personal__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.avatar {
+.personal__name {
   margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
@@ -593,7 +595,7 @@ header {
   color: var(--text-cl);
 }
 
-.profession {
+.personal__direction {
   margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
@@ -602,14 +604,14 @@ header {
   color: var(--main-txt-cl);
 }
 
-/*socials icons*/
-.socials {
+/*personal__socials icons*/
+.personal__socials {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.socials-link {
+.personal__socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -620,21 +622,21 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.personal__socials-link:hover .personal__socials-icon,
+.personal__socials-link:focus .personal__socials-icon {
   fill: #ffffff;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.personal__socials-link:hover,
+.personal__socials-link:focus {
   background-color: #2196f3;
 }
 
-.socials-item:not(:last-child) {
+.personal__socials-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.socials-icon {
+.personal__socials-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -778,22 +780,32 @@ header {
 
 /*Клиенты*/
 
-.clients-section {
+.clients {
   padding-top: 94px;
   padding-bottom: 116px;
 }
 
-.clients-list {
+.clients__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--text-cl);
+}
+
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -805,18 +817,18 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icon {
+.clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: #2196f3;
 }
 
-.clients-link:focus .clients-icon,
-.clients-link:hover .clients-icon {
+.clients__link:focus .clients__icon,
+.clients__link:hover .clients__icon {
   fill: #2196f3;
 }
 
@@ -897,7 +909,7 @@ header {
   color: #ffffff;
 }
 
-/*socials icons*/
+/*personal__socials icons*/
 .connect-list {
   display: flex;
   align-items: center;
