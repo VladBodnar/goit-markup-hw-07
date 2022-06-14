@@ -97,21 +97,21 @@ header {
 
 /*Навигация*/
 
-.nav__list {
+.navigation__list {
   display: flex;
   align-items: center;
 }
 
-.nav__item {
+.navigation__item {
   margin-right: 50px;
 }
 
-.nav__item:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }
 
 
-.nav__link {
+.navigation__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -121,7 +121,7 @@ header {
   color: var(--text-cl);
 }
 
-.nav__activ {
+.navigation__activ {
   position: relative;
   display: flex;
   padding-top: 32px;
@@ -132,7 +132,7 @@ header {
   color: var(--accent-cl);
 }
 
-.nav__activ::after {
+.navigation__activ::after {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -840,16 +840,16 @@ header {
   background-color: var(--dark-bg-cl);
 }
 
-.foot-cont {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-cont {
+.contacts {
   margin-right: 70px;
 }
 
-.logo-footer {
+.logo {
   display: block;
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -860,46 +860,46 @@ header {
   color: #2196f3;
 }
 
-.logo-white {
+.logo__white {
   color: #ffffff;
 }
 
-.address {
+.contacts-info {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.location {
+.contacts-info__location {
   margin-bottom: 9px;
   color: var(--secondary-txt-cl);
 }
 
-.address-item {
+.contacts-info__item {
   margin-bottom: 9px;
 }
 
-.address-item:last-child {
+.contacts-info__item:last-child {
   margin-bottom: 0;
 }
 
-.email,
-.phone {
+.contacts-info__mail,
+.contacts-info__phone {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email:hover,
-.phone:hover {
+.contacts-info__mail:hover,
+.contacts-info__phone:hover {
   color: var(--accent-cl);
 }
 
-.connect {
+.connection {
   display: block;
   margin-right: 100px;
 }
 
-.connect-name {
+.connection__name {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -910,12 +910,12 @@ header {
 }
 
 /*personal__socials icons*/
-.connect-list {
+.connection__list {
   display: flex;
   align-items: center;
 }
 
-.connect-link {
+.connection__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -926,25 +926,25 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connect-link:hover,
-.connect-link:focus {
+.connection__link:hover,
+.connection__link:focus {
   background-color: #2196f3;
 }
 
-.connect-item:not(:last-child) {
+.connection__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.connect-icon {
+.connection__icon {
   fill: #ffffff;
 }
 
-.subscribe {
+.subscription {
   display: block;
   margin-right: 0;
 }
 
-.subscribe-name {
+.subscription__name {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -954,11 +954,11 @@ header {
   color: #ffffff;
 }
 
-.form-subscribe-label {
+.subscription__label {
   display: flex;
 }
 
-.form-subscribe {
+.subscription__form {
   width: 360px;
   padding: 16px 15px;
   margin-right: 15px;
@@ -976,7 +976,7 @@ header {
   cursor: pointer;
 }
 
-.subscribe-btn {
+.subscription__btn {
   display: flex;
   padding: 10px 29px;
   font-weight: 700;
@@ -989,7 +989,7 @@ header {
   cursor: pointer;
 }
 
-.subscribe-icon {
+.subscription__icon {
   align-content: center;
   justify-content: center;
   margin-left: 10px;
